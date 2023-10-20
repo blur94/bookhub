@@ -4,6 +4,7 @@
   padding-right: var(--mantine-spacing-md);
   border-bottom: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  /* width: 100%; */
 }
 
 .link {
@@ -17,7 +18,7 @@
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 
-  @media (max-width: $mantine-breakpoint-sm) {
+  @media (max-width: em(576px)) {
     height: rem(42px);
     width: 100%;
   }
@@ -55,3 +56,11 @@
   border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
+
+ .logoText {
+    color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  }
+
+  .shadow {
+    box-shadow: 4px 4px 0px 0px light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  }
