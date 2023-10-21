@@ -9,6 +9,7 @@ import {
   ThemeIcon,
   ActionIcon,
   Center,
+  Box,
 } from "@mantine/core";
 import BannerImg from "@/assets/images/banner.png";
 import PlayImg from "@/assets/icons/play.svg";
@@ -47,7 +48,10 @@ export function DashBoardBanner() {
           </Group>
         </Flex>
       </div>
+
+      <Box className={classes.imageBg}>
       <Image src={BannerImg.src} className={classes.image} />
+      </Box>
     </div>
   );
 }
