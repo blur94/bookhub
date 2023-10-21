@@ -11,9 +11,15 @@ import {
   Center,
   Box,
 } from "@mantine/core";
+
 import BannerImg from "@/assets/images/banner.png";
 import PlayImg from "@/assets/icons/play.svg";
+import ProfileImg from "@/assets/icons/profile.svg";
+import BookImg from "@/assets/icons/book.svg";
+import TeacherImg from "@/assets/icons/teacher.svg";
+
 import classes from "@/styles/dashboard-banner.module.css";
+import BannerCard from "@/components/bannerCard";
 
 export function DashBoardBanner() {
   return (
@@ -49,8 +55,11 @@ export function DashBoardBanner() {
         </Flex>
       </div>
 
-      <Box className={classes.imageBg}>
-      <Image src={BannerImg.src} className={classes.image} />
+      <Box className={classes.imageBg} pos={"relative"}>
+        <Image src={BannerImg.src} className={classes.image} />
+        <BannerCard title="100+" text="Total Students" image={ProfileImg.src} top={0} left={-120} />
+        <BannerCard title="100+" text="Total Courses" image={BookImg.src} top={250} left={-170} />
+        <BannerCard title="100+" text="Total Tutors" image={TeacherImg.src} top={150} left={170} />
       </Box>
     </div>
   );
