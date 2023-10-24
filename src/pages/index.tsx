@@ -6,6 +6,8 @@ import { DashBoardBanner } from "@/views/dashboard/banner";
 import Partners from "@/views/dashboard/partners";
 import TheWhy from "@/views/dashboard/theWhy";
 import PopularCourses from "@/views/dashboard/popular";
+import Testimonials from "@/views/dashboard/testimonials";
+import Instructors from "@/views/dashboard/instructors";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +18,8 @@ function Home() {
       <Partners />
       <TheWhy />
       <PopularCourses />
+      <Testimonials />
+      <Instructors />
     </Container>
   );
 }

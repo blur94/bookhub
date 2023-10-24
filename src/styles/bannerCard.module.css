@@ -13,3 +13,16 @@
   border: 4px solid var(--mantine-color-black);
   background-color: var(--mantine-color-orange-1);
 }
+
+.control {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 50%;
+   box-shadow: 4px 4px 0px 0px
+    light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
