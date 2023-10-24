@@ -18,11 +18,48 @@
   width: 5vw;
   height: 10vh;
   border-radius: 50%;
-   box-shadow: 4px 4px 0px 0px
+  box-shadow: 4px 4px 0px 0px
     light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  &[data-inactive] {
+    opacity: 0;
+    cursor: default;
+  }
 
   svg {
     width: 30px !important;
     height: 30px !important;
+  }
+}
+
+.controls {
+  /* border: 1px solid #be1818; */
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 195px;
+
+  &[data-inactive] {
+    opacity: 0;
+    cursor: default;
+  }
+
+}
+
+.instControl {
+  width: 2.5vw;
+  height: 5vh;
+  border-radius: 50%;
+  box-shadow: 4px 4px 0px 0px
+    light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  &[data-inactive] {
+    opacity: 0;
+    cursor: default;
+  }
+
+  svg {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
