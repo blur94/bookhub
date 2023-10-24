@@ -63,3 +63,12 @@
     height: 20px !important;
   }
 }
+
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 264px;
+  
+}

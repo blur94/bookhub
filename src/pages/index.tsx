@@ -8,6 +8,7 @@ import TheWhy from "@/views/dashboard/theWhy";
 import PopularCourses from "@/views/dashboard/popular";
 import Testimonials from "@/views/dashboard/testimonials";
 import Instructors from "@/views/dashboard/instructors";
+import Newsletter from "@/views/dashboard/newsletter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ function Home() {
       <PopularCourses />
       <Testimonials />
       <Instructors />
+      <Newsletter />
     </Container>
   );
 }
