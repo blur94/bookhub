@@ -3,6 +3,7 @@ import { ComponentType, Fragment } from "react";
 import HeadMeta from "@/components/Head";
 import { AppShell } from "@mantine/core";
 import { Header } from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export default function withLayout(
   Component: ComponentType,
@@ -13,12 +14,14 @@ export default function withLayout(
     return (
       <Fragment>
         <HeadMeta pageName={pageName} />
-        <AppShell header={{ height: 60 }} footer={{ height: 60 }} padding="md">
+        <AppShell header={{ height: 60 }} footer={{ height: 160 }} padding="md">
           <AppShell.Header>
             <Header />
           </AppShell.Header>
 
-          <AppShell.Footer p="md">Footer</AppShell.Footer>
+          <AppShell.Footer bg="#0b935c">
+            <Footer />
+          </AppShell.Footer>
 
           <AppShell.Main>
             <Component />
