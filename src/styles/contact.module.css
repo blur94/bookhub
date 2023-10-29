@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  gap: 70px;
+}
+
+.shadow {
+  box-shadow: 4px 4px 0px 0px
+    light-dark(var(--mantine-color-black), var(--mantine-color-white));
+
+  @mixin hover {
+    background-color: light-dark(
+      var(--mantine-color-green-9),
+      var(--mantine-color-black)
+    );
+  }
+}
+
+.image {
+  width: 361px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 30%;
+  background: #f0f08e;
+  display: flex;
+  justify-content: center;
+  box-shadow: #000 6px 6px 0px 0px, #0b935c 12px 0px 0px 0px;
+
+  @media (max-width: em(576px)) {
+    max-width: 100%;
+  }
+}

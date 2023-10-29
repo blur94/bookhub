@@ -22,7 +22,7 @@ const validator = z.object({
 type validate = z.infer<typeof validator>;
 
 export default function Newsletter() {
-  const form = useForm({
+  const form = useForm<validate>({
     initialValues: initialValues,
     validate: zodResolver(validator),
   });
