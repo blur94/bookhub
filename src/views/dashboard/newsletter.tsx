@@ -10,14 +10,14 @@ import {
 import { useForm, zodResolver } from "@mantine/form";
 import { z } from "zod";
 import classes from "@/styles/bannerCard.module.css";
-import { FormEvent } from "react";
 
 const initialValues = { email: "" };
 
 const validator = z.object({
   email: z
     .string({ required_error: "Email is required" })
-    .email({ message: "Please enter a valid email" }).nonempty("Email is required and important"),
+    .email({ message: "Please enter a valid email" })
+    .nonempty("Email is required and important"),
 });
 type validate = z.infer<typeof validator>;
 
@@ -30,7 +30,7 @@ export default function Newsletter() {
   const handleSubmit = (values: validate) => {
     try {
       alert(
-        `Thank you for subscribing to our newsletter. You will receive a subscription email to ${form.values.email}.`
+        `Thank you for subscribing to our newsletter. You will receive a subscription email at ${form.values.email}.`
       );
     } catch (error) {
       console.log(error);
