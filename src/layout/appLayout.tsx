@@ -14,11 +14,7 @@ export default function withLayout(
     return (
       <Fragment>
         <HeadMeta pageName={pageName} />
-        <AppShell
-          header={{ height: 60 }}
-          footer={{ height: 230, collapsed: onscroll ? true : false }}
-          padding="md"
-        >
+        <AppShell header={{ height: 60 }} footer={{ height: 230 }} padding="md">
           <AppShell.Header>
             <Header />
           </AppShell.Header>
