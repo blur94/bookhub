@@ -15,7 +15,7 @@ export default function Footer() {
           <Text fz={10} c="white">
             Book Hub is one of the best and leading online learning platform in
             the worlds. It is an innovation that is designed to encourage
-            students perform well academically
+            students perform well academically.
           </Text>
         </Box>
         <Group gap={0}>
