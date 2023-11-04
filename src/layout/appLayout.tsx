@@ -14,14 +14,16 @@ export default function withLayout(
     return (
       <Fragment>
         <HeadMeta pageName={pageName} />
-        <AppShell header={{ height: 60 }} footer={{ height: 230 }} padding="md">
+        <AppShell
+          header={{ height: 60 }}
+          // footer={{ height: 230 }}
+          padding="md"
+        >
           <AppShell.Header>
             <Header />
           </AppShell.Header>
 
-          <AppShell.Footer bg="#0b935c">
-            <Footer />
-          </AppShell.Footer>
+          {/* <AppShell.Footer bg="#0b935c"></AppShell.Footer> */}
 
           <AppShell.Main>
             <Component />
