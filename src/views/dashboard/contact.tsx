@@ -5,21 +5,33 @@ import classes from "@/styles/contact.module.css";
 
 export default function Contact() {
   return (
-    <Box className={classes.wrapper}>
-      <Box className={classes.imageBg}>
-        <Box className={classes.image}>
-          <BackgroundImage
-            src={ContactImg.src}
-            bgp="top"
-            bgsz="cover"
-            bgr="no-repeat"
-            w={"100%"}
-            h={"100%"}
-          />
-        </Box>
+    <Flex
+      gap={{ base: 50, md: 100 }}
+      direction={{ base: "column", md: "row" }}
+      style={{ border: "1px solid lime" }}
+      w="100vw"
+    >
+      {/* <Box className={classes.wrapper}> */}
+      {/* <Box className={classes.imageBg}> */}
+      <Box className={classes.image}>
+        <BackgroundImage
+          src={ContactImg.src}
+          bgp="top"
+          bgsz="cover"
+          bgr="no-repeat"
+          w={"100%"}
+          h={"100%"}
+        />
       </Box>
+      {/* </Box> */}
 
-      <Flex direction="column" justify="center" gap={30}>
+      <Flex
+        direction="column"
+        justify="center"
+        w="100%"
+        style={{ border: "1px solid lime" }}
+        gap={{ base: 10, md: 30 }}
+      >
         <Text fz={20} fw={700}>
           Got any questions for us?
         </Text>
@@ -30,6 +42,6 @@ export default function Contact() {
           Contact Us
         </Button>
       </Flex>
-    </Box>
+    </Flex>
   );
 }

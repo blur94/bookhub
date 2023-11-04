@@ -73,8 +73,7 @@ export function Header() {
         opened={drawerOpened}
         onClose={closeDrawer}
         size="100%"
-        // padding="md"
-        title="Navigation"
+        title="BookHub"
         hiddenFrom="sm"
         zIndex={1000000}
       >

@@ -1,6 +1,8 @@
 .wrapper {
   display: flex;
   gap: 70px;
+  width: 100vw;
+  border: 1px solid cyan;
 }
 
 .shadow {
@@ -16,7 +18,7 @@
 }
 
 .image {
-  width: 361px;
+  width: 100vw;
   height: 400px;
   flex-shrink: 0;
   border-radius: 30%;
@@ -25,7 +27,7 @@
   justify-content: center;
   box-shadow: #000 6px 6px 0px 0px, #0b935c 12px 0px 0px 0px;
 
-  @media (max-width: em(576px)) {
-    max-width: 100%;
+  @media (min-width: em(576px)) {
+    max-width: 30vw;
   }
 }

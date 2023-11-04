@@ -11,9 +11,20 @@ export default function Partners() {
       <Text w="100%" ta="center" mb={30}>
         Trusted and Partnered by the best
       </Text>
-      <Flex align="center" justify="space-between">
+      <Flex
+        align="center"
+        direction={{ base: "column" }}
+        gap={{ base: 0 }}
+        justify="space-between"
+      >
         {partners.map((img, idx) => (
-          <Image key={idx} src={img.src} width={100} height={100} style={{ flexGrow: 1}} />
+          <Image
+            key={idx}
+            src={img.src}
+            width={100}
+            height={100}
+            // style={{ flexGrow: 1 }}
+          />
         ))}
       </Flex>
     </Box>

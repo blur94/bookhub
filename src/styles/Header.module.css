@@ -4,7 +4,12 @@
   padding-right: var(--mantine-spacing-md);
   border-bottom: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-  /* width: 100%; */
+  width: 100vw;
+
+  @media (max-width: em(576px)) {
+    /* height: rem(42px); */
+    width: rem(570px);
+  }
 }
 
 .link {
