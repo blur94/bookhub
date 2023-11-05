@@ -10,6 +10,7 @@ import { RouterTransition } from "@/components/RouterTransitions";
 import type { AppProps } from "next/app";
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
 import { primary } from "@/constants/theme";
+import Footer from "@/components/Footer";
 
 const theme = createTheme({
   colors: {
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <RouterTransition />
         <Notifications position="top-center" />
         <Component {...pageProps} />
+        <Footer />
       </MantineProvider>
     </>
   );
